@@ -6,6 +6,8 @@ lisa:
     user.terminal_list_directories()
 lisa all:
     user.terminal_list_all_directories()
+lisa down [<number>]:
+    user.terminal_list_all_directories_tree(number or 2)
 katie [<user.text>]: user.terminal_change_directory(text or "")
 katie root: user.terminal_change_directory_root()
 go <user.system_path>: insert("cd \"{system_path}\"\n")

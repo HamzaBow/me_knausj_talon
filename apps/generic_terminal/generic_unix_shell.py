@@ -13,12 +13,18 @@ class Actions:
 
     def terminal_list_directories():
         """Lists directories"""
-        actions.insert("ls")
+        # actions.insert("ls")
+        actions.insert("exa -la --color=always")
         actions.key("enter")
 
     def terminal_list_all_directories():
         """Lists all directories including hidden"""
         actions.insert("ls -a")
+        actions.key("enter")
+
+    def terminal_list_all_directories_tree(number: int):
+        """Lists all directories including hidden in tree"""
+        actions.insert("exa -la --tree --color=always --level " + str(number))
         actions.key("enter")
 
     def terminal_change_directory(path: str):

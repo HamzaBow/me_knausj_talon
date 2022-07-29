@@ -29,6 +29,7 @@ website_defaults = {
     "gist": "https://gist.github.com/",
     "wikipedia": "https://en.wikipedia.org/",
     "youtube": "https://www.youtube.com/",
+    "you": "https://you.com/",
 }
 
 _search_engine_defaults = {
@@ -37,6 +38,8 @@ _search_engine_defaults = {
     "map": "https://maps.google.com/maps?q=%s",
     "scholar": "https://scholar.google.com/scholar?q=%s",
     "wiki": "https://en.wikipedia.org/w/index.php?search=%s",
+    "youtube":  "https://www.youtube.com/search?q=%s",
+    "you":  "https://you.com/search?q=%s",
 }
 
 ctx = Context()
