@@ -22,8 +22,13 @@ copy paste:
     sleep(50ms)
     edit.paste()
 
+
+
+disk:
+    key(escape)
+    insert(":w")
+    key(enter)
+
+
 back: insert("cd ..\n")
 
-purge: key(ctrl-u)
-drink: key(ctrl-d)
-drop: key(ctrl-c)

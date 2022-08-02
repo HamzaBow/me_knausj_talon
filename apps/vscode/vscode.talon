@@ -85,7 +85,7 @@ file delete:
     sleep(150ms)
 file open folder: user.vscode("revealFileInOS")
 file reveal: user.vscode("workbench.files.action.showActiveFileInExplorer")
-save: user.vscode("workbench.action.files.saveWithoutFormatting")
+disk: user.vscode("workbench.action.files.saveWithoutFormatting")
 
 # Language Features
 suggest show: user.vscode("editor.action.triggerSuggest")
@@ -253,3 +253,8 @@ cell run: user.vscode("jupyter.runcurrentcell")
 
 install local: user.vscode("workbench.extensions.action.installVSIX")
 preview markdown: user.vscode("markdown.showPreview")
+
+# my custom commands
+nope: user.vscode("undo")
+undo that: user.vscode("undo")
+redo that: user.vscode("redo")

@@ -65,3 +65,7 @@ class Actions:
         """Search a search engine for given text"""
         url = search_template.replace("%s", quote_plus(search_text))
         webbrowser.open(url)
+
+    def search_with_google(search_text: str):
+        """Search a search engine for given text"""
+        webbrowser.open(f"https://www.google.com/search?q={search_text}")

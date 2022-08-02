@@ -1,7 +1,14 @@
 window (new|open): app.window_open()
+
 window next: app.window_next()
+wix: app.window_next()
+
 window last: app.window_previous()
+
 window close: app.window_close()
+wink:         app.window_close()
+waist:         app.window_next()
+
 focus <user.running_applications>: user.switcher_focus(running_applications)
 # following only works on windows. Can't figure out how to make it work for mac. No idea what the equivalent for linux would be.
 focus$: user.switcher_menu()
@@ -12,6 +19,14 @@ launch <user.launch_applications>: user.switcher_launch(launch_applications)
 snap <user.window_snap_position>: user.snap_window(window_snap_position)
 snap next [screen]: user.move_window_next_screen()
 snap last [screen]: user.move_window_previous_screen()
+
+snap east: user.move_window_to_screen(1)
+snap cent: user.move_window_to_screen(2)
+snap west: user.move_window_to_screen(3)
+
+snap full: key(super-up)
+snap tug: key(f11)
+
 snap screen <number>: user.move_window_to_screen(number)
 snap <user.running_applications> <user.window_snap_position>:
     user.snap_app(running_applications, window_snap_position)
