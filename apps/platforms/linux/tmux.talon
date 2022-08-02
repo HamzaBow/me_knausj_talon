@@ -1,5 +1,9 @@
 os: linux
-tag: user.tmux
+#old
+#tag: user.tmux
+
+#my config
+tag: terminal
 -
 mux: "tmux "
 
@@ -12,6 +16,12 @@ mux sessions:
 mux name session:
     key(ctrl-b)
     key($)
+mux next session:
+    key(ctrl-b)
+    key(")")
+mux over:
+    key(ctrl-b)
+    key(w)
 mux kill session:
     insert('tmux kill-session -t ')
 #window management
@@ -49,6 +59,9 @@ mux move <user.arrow_key>:
 mux close pane:
     key(ctrl-b)
     key(x)
+mux zoom:
+    key(ctrl-b)
+    key(z)
 #Say a number right after this command, to switch to pane
 mux pane numbers:
     key(ctrl-b)
