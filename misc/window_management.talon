@@ -24,6 +24,16 @@ snap east: user.move_window_to_screen(1)
 snap cent: user.move_window_to_screen(2)
 snap west: user.move_window_to_screen(3)
 
+snap east full:
+  user.move_window_to_screen(1)
+  key(super-up)
+snap cent full:
+  user.move_window_to_screen(2)
+  key(super-up)
+snap west full:
+  user.move_window_to_screen(3)
+  key(super-up)
+
 snap full: key(super-up)
 snap tug: key(f11)
 
