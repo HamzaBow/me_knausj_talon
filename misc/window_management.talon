@@ -20,22 +20,36 @@ snap <user.window_snap_position>: user.snap_window(window_snap_position)
 snap next [screen]: user.move_window_next_screen()
 snap last [screen]: user.move_window_previous_screen()
 
-snap east: user.move_window_to_screen(1)
+snap east: user.move_window_to_screen(3)
 snap cent: user.move_window_to_screen(2)
-snap west: user.move_window_to_screen(3)
+snap west: user.move_window_to_screen(1)
 
 snap east full:
-  user.move_window_to_screen(1)
-  key(super-up)
-snap cent full:
-  user.move_window_to_screen(2)
-  key(super-up)
-snap west full:
+  user.move_window_to_screen(3)
+  key(f11)
+
+snap east max:
   user.move_window_to_screen(3)
   key(super-up)
 
-snap full: key(super-up)
-snap tug: key(f11)
+snap cent full:
+  user.move_window_to_screen(2)
+  key(f11)
+
+snap cent max:
+  user.move_window_to_screen(2)
+  key(super-up)
+
+snap west full:
+  user.move_window_to_screen(1)
+  key(f11)
+
+snap west max:
+  user.move_window_to_screen(1)
+  key(super-up)
+
+snap max: key(super-up)
+snap full: key(f11)
 
 snap screen <number>: user.move_window_to_screen(number)
 snap <user.running_applications> <user.window_snap_position>:
