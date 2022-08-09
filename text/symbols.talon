@@ -6,7 +6,7 @@ triple quote: "'''"
 ellipses: "..."
 (comma and | spamma): ", "
 arrow: "->"
-dub arrow: "=>"
+dub arrow: " => "
 new line: "\\n"
 carriage return: "\\r"
 line feed: "\\r\\n"
@@ -45,3 +45,4 @@ quote that:
 (grave | back tick) that:
     text = edit.selected_text()
     user.paste('`{text}`')
+assign: " = "
