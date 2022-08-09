@@ -260,3 +260,11 @@ undo that: user.vscode("undo")
 redo that: user.vscode("redo")
 
 fog: user.vscode("toggleVim")
+draft submit:
+  user.vscode("editor.action.selectAll")
+  user.vscode("editor.action.clipboardCopyAction")
+  user.vscode("workbench.action.files.save")
+  sleep(100ms)
+  user.vscode("workbench.action.closeWindow")
+  sleep(500ms)
+  edit.paste()
