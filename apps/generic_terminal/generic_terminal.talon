@@ -32,3 +32,4 @@ disk:
 
 back: insert("cd ..\n")
 
+clock: key(ctrl-l)
