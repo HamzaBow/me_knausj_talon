@@ -258,3 +258,5 @@ preview markdown: user.vscode("markdown.showPreview")
 nope: user.vscode("undo")
 undo that: user.vscode("undo")
 redo that: user.vscode("redo")
+
+fog: user.vscode("toggleVim")
