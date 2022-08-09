@@ -69,3 +69,7 @@ mux zoom:
 mux pane numbers:
     key(ctrl-b)
     key(q)
+
+mux rotate:
+    key(ctrl-b)
+    key(ctrl-o)
