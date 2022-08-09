@@ -53,6 +53,9 @@ mux split down:
 mux next pane:
     key(ctrl-b)
     key(o)
+mux lay:
+    key(ctrl-b)
+    key(space)
 mux move <user.arrow_key>:
     key(ctrl-b)
     key(arrow_key)
