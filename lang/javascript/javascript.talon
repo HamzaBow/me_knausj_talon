@@ -50,5 +50,8 @@ state reduce: app.notify('ERROR: Command deprecated; please use "dot reduce"')
 
 state spread: "..."
 
-from import:
-    user.insert_between(' from  "', '"')
+import from:
+    user.insert_between('import "', '" from ""')
+
+import curly:
+    user.insert_between('import { ', ' } from ""')

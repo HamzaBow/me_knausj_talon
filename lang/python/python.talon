@@ -34,6 +34,12 @@ state raise: "raise "
 self taught: "self."
 pie test: "pytest"
 state past: "pass"
+state equal: " == "
+state not equal: " != "
+state greater than: " > "
+state less than: " < "
+state greater than or equal: " >= "
+state less than or equal: " <= "
 
 raise {user.python_exception}: user.insert_between("raise {python_exception}(", ")")
 except {user.python_exception}: "except {python_exception}:"
