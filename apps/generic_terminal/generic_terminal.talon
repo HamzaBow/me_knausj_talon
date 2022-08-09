@@ -30,6 +30,6 @@ disk:
     key(enter)
 
 
-back: insert("cd ..\n")
+go back: insert("cd ..\n")
 
 clock: key(ctrl-l)
