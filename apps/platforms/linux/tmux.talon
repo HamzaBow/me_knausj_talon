@@ -44,10 +44,10 @@ mux close window:
     key(ctrl-b)
     key(&)
 #pane management
-mux split horizontal:
+mux split east:
     key(ctrl-b)
     key(%)
-mux split vertical:
+mux split down:
     key(ctrl-b)
     key(")
 mux next pane:
