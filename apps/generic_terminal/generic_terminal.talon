@@ -33,6 +33,11 @@ disk:
 go back: insert("cd ..\n")
 
 clock: key(ctrl-l)
+
+motion:
+    key(escape)
+    key(s)
+
 draft it:
   key(escape)
   key(0)
