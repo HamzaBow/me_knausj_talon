@@ -33,3 +33,12 @@ disk:
 go back: insert("cd ..\n")
 
 clock: key(ctrl-l)
+draft it:
+  key(escape)
+  key(0)
+  key(v)
+  key($)
+  key(ctrl-x)
+  key(c)
+  sleep(200ms)
+  user.create_draft_file()

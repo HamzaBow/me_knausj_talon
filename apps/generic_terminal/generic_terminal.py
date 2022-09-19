@@ -1,4 +1,7 @@
-from talon import Module
+from talon import Module, actions
+import subprocess
+import random
+from time import sleep
 
 mod = Module()
 
@@ -33,3 +36,13 @@ class Actions:
 
     def terminal_kill_all():
         """kills the running command"""
+    def create_draft_file():
+        "create a draft file"
+        filepath = f"/tmp/{random.randint(1000, 9999)}"
+        print('filepath:', filepath)
+        print("touch {filepath}")
+        copied_text = actions.clip.text()
+        subprocess.run(f"echo -n \"{copied_text}\" >> {filepath}", shell=True)
+        sleep(1)
+        print("code -n {filepath}")
+        subprocess.run(f"code -n {filepath}", shell=True)
