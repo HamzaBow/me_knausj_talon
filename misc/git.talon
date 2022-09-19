@@ -28,6 +28,13 @@ git commit made: user.insert_between("git commit -m \"", "\"")
 git commit amend: "git commit --amend\n"
 git commit no verify: "git commit -n"
 git commit existing: "git commit -a\n"
+git commit fix: user.insert_between("git commit -m \"fix: ", "\"")
+git commit style: user.insert_between("git commit -m \"style: ", "\"")
+git commit feat: user.insert_between("git commit -m \"feat: ", "\"")
+git commit refactor: user.insert_between("git commit -m \"refactor: ", "\"")
+git commit docs: user.insert_between("git commit -m \"docs: ", "\"")
+git commit test: user.insert_between("git commit -m \"test: ", "\"")
+git update commit: user.insert_between("git add -u && git commit -m \"", "\"")
 git diff (colour|color) words: "git diff --color-words "
 git diff wait: "git diff "
 git diff: "clear\ngit diff\n"
