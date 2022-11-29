@@ -268,3 +268,5 @@ draft submit:
   user.vscode("workbench.action.closeWindow")
   sleep(500ms)
   edit.paste()
+
+toggle vim: user.vscode("toggleVim")
