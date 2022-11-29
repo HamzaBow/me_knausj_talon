@@ -47,3 +47,23 @@ draft it:
   key(c)
   sleep(200ms)
   user.create_draft_file()
+
+vim done:
+  key(escape)
+  key(:)
+  key(w)
+  key(q)
+  key(enter)
+
+vim quit:
+  key(escape)
+  key(:)
+  key(q)
+  key(enter)
+
+vim quit force:
+  key(escape)
+  key(:)
+  key(q)
+  key(!)
+  key(enter)
