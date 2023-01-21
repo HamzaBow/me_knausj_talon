@@ -4,7 +4,8 @@ and tag: user.git
 # Standard commands
 git add patch: "git add . -p\n"
 git add: "git add "
-git add everything: "git add -u\n"
+git add update: "git add -u\n"
+git add all: "git add --all\n"
 git bisect: "git bisect "
 git blame: "git blame "
 git branch: "git branch "

@@ -47,9 +47,9 @@ manual <user.text>:
   user.insert_formatted(text)
 
 # BUFFER SWITCHING #
-switch: key(ctrl-x b)
-other switch: key(ctrl-x 4 b)
-display: key(ctrl-x 4 ctrl-o)
+# switch: key(ctrl-x b)
+# other switch: key(ctrl-x 4 b)
+# display: key(ctrl-x 4 ctrl-o)
 
 # SHELL COMMANDS #
 shell command: user.emacs_meta("!")

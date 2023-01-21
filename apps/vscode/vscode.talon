@@ -269,4 +269,8 @@ draft submit:
   sleep(500ms)
   edit.paste()
 
-toggle vim: user.vscode("toggleVim")
+(toggle vim|vague): user.vscode("toggleVim")
+lame:
+  key(escape)
+  key(escape)
+  key(i)

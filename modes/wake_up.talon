@@ -15,3 +15,4 @@ mode: all
     user.engine_sleep()
 ^talon sleep [<phrase>]$: speech.disable()
 ^talon wake$: speech.enable()
+^sick: user.launch_in_fish('taltog')
